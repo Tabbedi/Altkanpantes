@@ -47,6 +47,42 @@ p {
   overflow-x: hidden;
 }
 
+.blue-bg3 {
+  position: fixed;
+  background: url('../Bilder/søppel.jpg');
+  background-size: cover;
+  background-color: #000000;
+  top: 0;
+  height: 400px;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.blue-bg4 {
+  position: fixed;
+  background: url('../Bilder/Flasker.jpg');
+  background-size: cover;
+  background-color: #000000;
+  top: 0;
+  height: 400px;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
+.blue-bg5 {
+  position: fixed;
+  background: url('../Bilder/Vindkraft.png');
+  background-size: cover;
+  background-color: #000000;
+  top: 0;
+  height: 400px;
+  width: 100vw;
+  z-index: -1;
+  overflow-x: hidden;
+}
+
 .white-bg {
   position: absolute;
   top: 0;
@@ -54,7 +90,55 @@ p {
   min-height: 500px;
   margin: 210px 0;
   width: 99.45%;
+  height: 40vh;
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.white-bg2 {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  min-height: 500px;
+  margin: 210px 0;
+  width: 99.45%;
   height: 1000vh;
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.white-bg3 {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  min-height: 500px;
+  margin: 210px 0;
+  width: 99.45%;
+  height: 650vh;
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.white-bg4 {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  min-height: 500px;
+  margin: 210px 0;
+  width: 99.45%;
+  height: 200vh;
+  transform: skewY(5deg);
+  z-index: -1;
+}
+
+.white-bg5 {
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  min-height: 500px;
+  margin: 210px 0;
+  width: 99.45%;
+  height: 222vh;
   transform: skewY(5deg);
   z-index: -1;
 }
@@ -333,4 +417,52 @@ p {
   width: 40px;
   text-align: center;
   font-size: 14px;
+}
+
+
+/*-------------------------------------------------------------*/
+
+#game-container {
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bins {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.bin {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed gray;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 120px;
+  font-weight: bold;
+}
+
+#items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.item {
+  width: 50px;
+  height: 50px;
+  cursor: grab;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(197, 32, 32);
 }
